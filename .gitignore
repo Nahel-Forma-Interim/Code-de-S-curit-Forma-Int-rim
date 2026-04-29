@@ -1,0 +1,21 @@
+.claude/
+dbg/
+uploads/
+*.docx
+Thumbs.db
+.DS_Store
+
+# Dependencies
+node_modules/
+
+# Archives
+*.zip
+
+# Fichiers générés / debug
+debug-*.png
+preview-certificat*.pdf
+preview-certificat*.png
+certificat-vwevwv-wfqwfve.pdf
+
+# Staging local pour anciens uploads manuels
+_upload_github/

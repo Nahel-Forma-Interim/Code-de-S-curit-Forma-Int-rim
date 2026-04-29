@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Test PDF — Forma Intérim</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 40px; max-width: 600px; margin: auto; }
+    button { padding: 12px 24px; font-size: 16px; cursor: pointer; margin: 8px 0; display: block; width: 100%; }
+    h1 { color: #4FB0E6; }
+    iframe { width: 100%; height: 800px; border: 1px solid #ccc; margin-top: 20px; }
+    label { display: block; margin-top: 12px; }
+    input { padding: 8px; width: 100%; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h1>Prévisualisation du certificat PDF</h1>
+  <p>Remplis les champs (ou laisse les valeurs par défaut) et clique sur <b>Générer</b>.</p>
+
+  <label>Prénom <input id="fn" value="Jean"></label>
+  <label>Nom <input id="ln" value="Dupont"></label>
+  <label>Score (sur 30) <input id="sc" type="number" value="25"></label>
+
+  <button onclick="gen(true)">🎯 Générer — VALIDÉ (score ≥ 20)</button>
+  <button onclick="gen(false)">❌ Générer — NON VALIDÉ (score 12/30)</button>
+
+  <iframe id="preview"></iframe>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="pdf.js"></script>
+  <script>
+    // Signature factice (trait simple)
+    const fakeSignature = (() => {
+      const canvas = document.createElement("canvas");
+      canvas.width = 400; canvas.height = 150;
+      const ctx = canvas.getContext("2d");
+      ctx.strokeStyle = "#1a1a1a";
+      ctx.lineWidth = 2.5;
+      ctx.beginPath();
+      ctx.moveTo(30, 100);
+      ctx.bezierCurveTo(80, 40, 150, 130, 200, 70);
+      ctx.bezierCurveTo(250, 30, 300, 120, 370, 60);
+      ctx.stroke();
+      return canvas.toDataURL("image/png");
+    })();
+
+    async function gen(valide) {
+      const firstName = document.getElementById("fn").value;
+      const lastName = document.getElementById("ln").value;
+      const score = valide ? parseInt(document.getElementById("sc").value || "25", 10) : 12;
+
+      const payload = {
+        candidate: { firstName, lastName },
+        language: "fr",
+        startedAt: new Date().toISOString(),
+        endedAt: new Date().toISOString(),
+        durationSec: 480,
+        score,
+        total: 30,
+        threshold: 20,
+        validated: score >= 20,
+        signature: fakeSignature,
+        answers: []
+      };
+
+      const { blob } = await window.buildResultPdf(payload);
+      const url = URL.createObjectURL(blob);
+      document.getElementById("preview").src = url;
+    }
+
+    // Génère automatiquement un exemple au chargement
+    gen(true);
+  </script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+{
+  "title": "Questionnaire de Prévention Sécurité — Chasse aux risques",
+  "sector": "Gros œuvre — Bâtiment",
+  "totalQuestions": 30,
+  "themes": 10,
+  "duration": "30 à 40 minutes",
+  "scoring": [
+    { "range": "26-30", "level": "Maîtrise", "recommendation": "Bonne culture sécurité. Mission validée, rappel des points faibles éventuels." },
+    { "range": "20-25", "level": "Acceptable", "recommendation": "Reprendre avec l'intérimaire les thèmes sur lesquels il a fauté. Validation possible." },
+    { "range": "15-19", "level": "Insuffisant", "recommendation": "Formation complémentaire recommandée avant délégation. Nouvel entretien sécurité." },
+    { "range": "<15", "level": "À risque", "recommendation": "Délégation à suspendre en l'état. Formation sécurité obligatoire avant toute mission gros œuvre." }
+  ],
+  "questions": [
+    {
+      "id": 1, "theme": "EPI", "type": "multi",
+      "question": "Avant de prendre votre poste sur le chantier, quels EPI sont obligatoires en permanence dès que vous êtes en zone de travaux ?",
+      "options": ["Casque de chantier", "Chaussures ou bottes de sécurité", "Vêtement de travail haute visibilité", "Lunettes de soleil", "Gants adaptés à la tâche"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Le casque, les chaussures de sécurité, le vêtement haute visibilité et les gants adaptés à la tâche sont les EPI de base. Les lunettes de soleil ne sont pas un EPI, à la différence de lunettes de protection spécifiques."
+    },
+    {
+      "id": 2, "theme": "EPI", "type": "single",
+      "question": "Votre casque de chantier a reçu un choc violent la semaine dernière, mais il ne présente aucune fissure visible. Que faites-vous ?",
+      "options": ["Je continue à l'utiliser, il n'a rien.", "Je le nettoie et je vérifie à nouveau.", "Je le mets hors service et j'en demande un neuf à mon encadrement.", "Je le garde pour les petits travaux uniquement."],
+      "correct": ["C"],
+      "explanation": "Un casque ayant subi un choc, même sans fissure visible, a pu perdre ses capacités de protection. Il doit être mis au rebut."
+    },
+    {
+      "id": 3, "theme": "EPI", "type": "multi",
+      "question": "Pour quelles tâches le port de lunettes ou d'un écran facial est-il indispensable ?",
+      "options": ["Découpe de parpaings à la disqueuse", "Piquage / burinage du béton", "Coulage de béton à la benne", "Perçage en plafond", "Lecture d'un plan dans le bungalow"],
+      "correct": ["A", "B", "D"],
+      "explanation": "Découpe, piquage et perçage génèrent des projections. Le coulage à la benne relève plutôt d'autres protections (casque, EPI). La lecture de plan ne requiert pas de lunettes."
+    },
+    {
+      "id": 4, "theme": "Chutes de hauteur", "type": "single",
+      "question": "À partir de quelle hauteur la mise en place de protections collectives contre les chutes est-elle obligatoire ?",
+      "options": ["À partir de 3 m", "À partir de 2 m", "Dès qu'il existe un risque de chute, quelle que soit la hauteur", "Uniquement à partir de 1,50 m"],
+      "correct": ["C"],
+      "explanation": "En France, le Code du travail impose des mesures dès qu'il existe un risque de chute, sans seuil unique de hauteur. L'ancien seuil de 3 m n'est plus la référence."
+    },
+    {
+      "id": 5, "theme": "Chutes de hauteur", "type": "single",
+      "question": "Vous devez travailler au bord d'une dalle non protégée pendant 10 minutes « vite fait ». Que faites-vous ?",
+      "options": ["J'y vais, c'est rapide, il n'y a pas de risque.", "Je m'attache avec un harnais sur un point d'ancrage identifié.", "J'arrête le travail, je préviens mon chef et j'attends la mise en place d'un garde-corps ou d'une protection collective.", "Je demande à un collègue de me tenir."],
+      "correct": ["C"],
+      "explanation": "La règle est claire : pas de protection = pas de travail. Les protections collectives priment sur les protections individuelles."
+    },
+    {
+      "id": 6, "theme": "Chutes de hauteur", "type": "multi",
+      "question": "Concernant les échafaudages, quelles affirmations sont exactes ?",
+      "options": ["Un échafaudage doit être monté par un personnel formé et reçu.", "Je peux retirer un garde-corps temporairement pour approvisionner plus vite.", "Avant chaque prise de poste, je dois vérifier l'état de l'échafaudage (planchers, garde-corps, plinthes).", "Une échelle peut remplacer un échafaudage pour des travaux prolongés.", "L'accès se fait uniquement par les trappes ou escaliers prévus à cet effet."],
+      "correct": ["A", "C", "E"],
+      "explanation": "Montage par personnel formé (R.408), vérification quotidienne, accès dédiés. Retirer un garde-corps est interdit. Une échelle n'est pas un poste de travail."
+    },
+    {
+      "id": 7, "theme": "Chutes de hauteur", "type": "multi",
+      "question": "Le port du harnais anti-chute nécessite obligatoirement :",
+      "options": ["Une formation spécifique au port du harnais", "Une vérification visuelle avant chaque utilisation", "Un point d'ancrage résistant à minima 12 kN (vérifié / identifié)", "Une visite médicale d'aptitude", "Rien de particulier, il suffit de le mettre correctement"],
+      "correct": ["A", "B", "C", "D"],
+      "explanation": "Le port du harnais nécessite formation spécifique, vérification avant emploi, point d'ancrage fiable et aptitude médicale. Ce n'est pas un EPI « que l'on enfile »."
+    },
+    {
+      "id": 8, "theme": "Manutention manuelle et TMS", "type": "single",
+      "question": "Pour soulever une charge lourde depuis le sol, la bonne posture est :",
+      "options": ["Jambes tendues, dos courbé, je soulève avec les bras", "Jambes fléchies, dos droit, charge près du corps, je pousse sur les jambes", "En torsion du buste pour gagner du temps", "Peu importe la posture tant que je soulève vite"],
+      "correct": ["B"],
+      "explanation": "Jambes fléchies, dos droit, charge près du corps : c'est la base du geste et posture."
+    },
+    {
+      "id": 9, "theme": "Manutention manuelle et TMS", "type": "multi",
+      "question": "Quelles solutions permettent de limiter le risque de trouble musculo-squelettique (TMS) sur un chantier gros œuvre ?",
+      "options": ["Utiliser des aides mécaniques (diable, chariot, grue, mini-pelle)", "Fractionner la charge (porter à deux, faire plusieurs voyages)", "Faire des pauses régulières", "Porter seul des charges > 25 kg pour gagner du temps", "Organiser le poste pour éviter de travailler bras en l'air ou à genoux en permanence"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Aides mécaniques, fractionnement, pauses, organisation du poste. Porter seul > 25 kg est à proscrire : la limite indicative est de 25 kg pour un homme, 15 kg pour une femme."
+    },
+    {
+      "id": 10, "theme": "Engins de chantier et levage", "type": "single",
+      "question": "Vous êtes au sol et une grue transporte une charge au-dessus de la zone. Quelle est la bonne attitude ?",
+      "options": ["Je continue à travailler, le grutier sait ce qu'il fait.", "Je m'écarte de la zone d'évolution de la charge, je ne passe jamais dessous.", "Je regarde la charge monter pour m'assurer qu'elle est bien élinguée.", "Je guide la charge avec les mains."],
+      "correct": ["B"],
+      "explanation": "Ne jamais stationner ni passer sous une charge suspendue. Zone d'évolution à respecter."
+    },
+    {
+      "id": 11, "theme": "Engins de chantier et levage", "type": "multi",
+      "question": "Pour conduire un engin de chantier (chariot, mini-pelle, nacelle, grue mobile...) sur le chantier, il faut :",
+      "options": ["Être titulaire d'un CACES ou d'une autorisation équivalente (catégorie correspondante)", "Avoir reçu une autorisation de conduite délivrée par l'employeur", "Être à jour de la visite médicale d'aptitude", "Le permis B suffit", "Avoir été formé aux spécificités de l'engin utilisé"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "CACES + autorisation de conduite + aptitude médicale + formation spécifique. Le permis B ne suffit jamais pour conduire un engin."
+    },
+    {
+      "id": 12, "theme": "Engins de chantier et levage", "type": "single",
+      "question": "Vous voyez un collègue intérimaire utiliser une nacelle sans harnais ni longe. Que faites-vous ?",
+      "options": ["Ça ne me regarde pas.", "Je l'arrête, je lui rappelle la règle, et si besoin j'alerte l'encadrement.", "Je monte avec lui pour surveiller.", "Je prends une photo pour le dénoncer plus tard."],
+      "correct": ["B"],
+      "explanation": "Le devoir d'alerte passe par un rappel direct et, si besoin, l'information de l'encadrement. Ni ignorer, ni dénoncer à distance."
+    },
+    {
+      "id": 13, "theme": "Risque électrique", "type": "single",
+      "question": "Vous trouvez une rallonge électrique dont la gaine est abîmée et laisse voir les fils. Que faites-vous ?",
+      "options": ["Je la répare avec du scotch adhésif.", "Je la condamne immédiatement, je la signale et je la fais remplacer.", "Je l'utilise quand même si elle fonctionne.", "Je la laisse pour le prochain."],
+      "correct": ["B"],
+      "explanation": "Toute rallonge endommagée doit être condamnée et remplacée. Pas de réparation de fortune."
+    },
+    {
+      "id": 14, "theme": "Risque électrique", "type": "single",
+      "question": "Un intérimaire non habilité peut-il intervenir sur une armoire électrique ?",
+      "options": ["Oui, s'il a lu le mode d'emploi.", "Oui, pour une réparation simple.", "Non, seule une personne habilitée (B0, BS, BR...) peut intervenir selon son niveau d'habilitation.", "Oui, si un collègue l'accompagne."],
+      "correct": ["C"],
+      "explanation": "Seule une personne habilitée (niveau adapté à l'intervention) peut intervenir. L'habilitation est délivrée par l'employeur après formation."
+    },
+    {
+      "id": 15, "theme": "Produits chimiques et poussières", "type": "multi",
+      "question": "Avant d'utiliser un produit chimique (décoffrant, résine, adjuvant...), je dois :",
+      "options": ["Lire l'étiquette et les pictogrammes de danger", "Consulter la FDS (Fiche de Données de Sécurité) si nécessaire", "Porter les EPI adaptés (gants, lunettes, masque selon le produit)", "Le transvaser dans une bouteille alimentaire pour le transport", "Travailler en zone ventilée si indiqué"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Étiquette + FDS + EPI + ventilation. Ne jamais transvaser dans un contenant alimentaire (risque d'ingestion accidentelle)."
+    },
+    {
+      "id": 16, "theme": "Produits chimiques et poussières", "type": "multi",
+      "question": "La poussière de béton et de silice cristalline présente quel(s) risque(s) ?",
+      "options": ["Risque de silicose (maladie pulmonaire grave)", "Risque de cancer du poumon (CMR reconnu)", "Aucun risque si on n'en respire pas beaucoup", "Irritation des yeux et des voies respiratoires", "La poussière peut être évitée par arrosage, aspiration ou captage à la source"],
+      "correct": ["A", "B", "D", "E"],
+      "explanation": "La silice cristalline est classée CMR (cancérogène) par l'UE depuis 2020. La silicose est une maladie grave et irréversible. Réduction à la source obligatoire."
+    },
+    {
+      "id": 17, "theme": "Produits chimiques et poussières", "type": "multi",
+      "question": "Vous coupez des parpaings à la disqueuse en extérieur. Quelles mesures sont correctes ?",
+      "options": ["Coupe à l'eau pour abattre la poussière", "Port du masque FFP3 minimum", "Port de lunettes ou écran facial + protections auditives", "Coupe à sec, masque chirurgical suffit", "Gants adaptés et vêtements couvrants"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Coupe à l'eau (ou captage à la source) + masque FFP3 + lunettes + protections auditives + gants. La coupe à sec avec un masque chirurgical est très insuffisante."
+    },
+    {
+      "id": 18, "theme": "Co-activité et circulation", "type": "single",
+      "question": "Sur un chantier, le PPSPS (Plan Particulier de Sécurité et de Protection de la Santé) ou le plan de prévention sert à :",
+      "options": ["Justifier le prix du chantier.", "Identifier les risques liés à la co-activité entre entreprises et définir les mesures de prévention.", "Donner les horaires de travail.", "Remplacer l'accueil sécurité."],
+      "correct": ["B"],
+      "explanation": "Le PPSPS / plan de prévention formalise les risques liés à la co-activité et les mesures associées."
+    },
+    {
+      "id": 19, "theme": "Co-activité et circulation", "type": "multi",
+      "question": "Vous arrivez pour la première fois sur un chantier en tant qu'intérimaire. Quelles démarches sont obligatoires avant de commencer à travailler ?",
+      "options": ["Suivre l'accueil sécurité de l'entreprise utilisatrice", "Prendre connaissance des consignes de sécurité du site", "Localiser les issues de secours, le point de rassemblement et l'infirmerie / trousse de secours", "Commencer directement à travailler, l'accueil se fera plus tard", "Vérifier avec l'encadrement que ma mission correspond à ma qualification et à ma formation"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "L'accueil sécurité est obligatoire, spécialement pour les intérimaires. Commencer sans accueil est à proscrire."
+    },
+    {
+      "id": 20, "theme": "Co-activité et circulation", "type": "multi",
+      "question": "Concernant la circulation piétons / engins sur le chantier :",
+      "options": ["Je respecte les cheminements piétons balisés", "Je ne passe pas dans l'angle mort des engins", "J'établis un contact visuel avec le conducteur avant de m'approcher", "Je coupe à travers la zone d'évolution des engins pour gagner du temps", "Je porte le vêtement haute visibilité"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Cheminements, angles morts, contact visuel, visibilité. Ne jamais couper par les zones d'évolution des engins."
+    },
+    {
+      "id": 21, "theme": "Ordre, propreté et déchets", "type": "single",
+      "question": "Un sol encombré de gravats, de planches avec clous ou de câbles qui traînent :",
+      "options": ["C'est normal sur un chantier, on fait avec.", "Représente un risque majeur de chute de plain-pied, de piqûre et de blessure — le nettoyage fait partie du travail.", "Est le problème du chef de chantier uniquement.", "Ne concerne pas les intérimaires."],
+      "correct": ["B"],
+      "explanation": "Les chutes de plain-pied sont l'une des premières causes d'accident dans le BTP. Le rangement est l'affaire de tous."
+    },
+    {
+      "id": 22, "theme": "Ordre, propreté et déchets", "type": "single",
+      "question": "Vous cassez accidentellement un carrelage contenant potentiellement de l'amiante sur un chantier de réhabilitation. Que faites-vous ?",
+      "options": ["Je balaie et je jette dans la benne classique.", "J'arrête immédiatement, je délimite la zone, je préviens l'encadrement et je ne reprends qu'après avis et mesures adaptées (diagnostic, entreprise spécialisée SS3/SS4).", "Je mouille le sol et je continue.", "Je change de zone sans rien dire."],
+      "correct": ["B"],
+      "explanation": "Arrêt immédiat, alerte, mesures adaptées. Les chantiers de réhabilitation nécessitent un repérage amiante avant travaux (RAAT). Ne jamais jeter avec les gravats standards."
+    },
+    {
+      "id": 23, "theme": "Bruit, vibrations, ambiances climatiques", "type": "single",
+      "question": "À partir de quel niveau de bruit le port des protections auditives est-il obligatoire (valeur d'exposition supérieure déclenchant l'action) ?",
+      "options": ["60 dB(A)", "80 dB(A) — mise à disposition / 85 dB(A) — port obligatoire", "100 dB(A)", "Dès qu'on entend du bruit"],
+      "correct": ["B"],
+      "explanation": "Valeurs d'exposition : 80 dB(A) → mise à disposition des protections ; 85 dB(A) → port obligatoire ; 87 dB(A) → valeur limite."
+    },
+    {
+      "id": 24, "theme": "Bruit, vibrations, ambiances climatiques", "type": "multi",
+      "question": "En cas de forte chaleur sur le chantier, quelles mesures sont recommandées ?",
+      "options": ["Boire régulièrement de l'eau fraîche (avant d'avoir soif)", "Adapter les horaires de travail (démarrer tôt, pause l'après-midi)", "Porter un couvre-chef / se protéger du soleil", "Boire de l'alcool pour tenir", "Signaler les signes d'alerte (maux de tête, vertiges, crampes) et alerter si un collègue présente ces symptômes"],
+      "correct": ["A", "B", "C", "E"],
+      "explanation": "Hydratation, horaires adaptés, protection solaire, vigilance aux signes d'alerte. L'alcool aggrave la déshydratation."
+    },
+    {
+      "id": 25, "theme": "Bruit, vibrations, ambiances climatiques", "type": "multi",
+      "question": "L'utilisation prolongée d'outils vibrants (marteau-piqueur, perforateur...) peut entraîner :",
+      "options": ["Le syndrome des vibrations main-bras", "Des troubles circulatoires (maladie des doigts blancs)", "Une simple fatigue passagère sans conséquence", "Des atteintes articulaires et nerveuses", "Rien si on est en bonne santé"],
+      "correct": ["A", "B", "D"],
+      "explanation": "Le syndrome des vibrations main-bras est une maladie professionnelle reconnue (tableau n° 69). Effets durables et parfois irréversibles."
+    },
+    {
+      "id": 26, "theme": "Conduite à tenir et droits/devoirs", "type": "multi",
+      "question": "En tant qu'intérimaire, vous arrivez sur un poste et vous constatez un risque grave et imminent pour votre vie ou votre santé. Vous avez :",
+      "options": ["L'obligation de travailler quand même pour ne pas perdre la mission", "Le droit d'alerte : informer immédiatement l'employeur ou son représentant", "Le droit de retrait : vous retirer de la situation sans sanction ni retenue sur salaire, si vous avez un motif raisonnable", "L'obligation de quitter le chantier sans prévenir personne", "Le devoir d'informer l'agence d'intérim"],
+      "correct": ["B", "C", "E"],
+      "explanation": "Droit d'alerte + droit de retrait (articles L4131-1 et suivants du Code du travail), sans sanction possible si le motif est raisonnable. L'agence doit être informée."
+    },
+    {
+      "id": 27, "theme": "Conduite à tenir et droits/devoirs", "type": "single",
+      "question": "Vous êtes témoin d'un accident de travail (collègue qui tombe, coupure grave...). Quel est le bon ordre des actions ?",
+      "options": ["Déplacer la victime / Alerter les secours / Protéger", "Protéger la zone / Examiner la victime / Alerter les secours / Secourir", "Secourir / Prendre une photo / Alerter", "Alerter / Attendre les secours sans rien faire"],
+      "correct": ["B"],
+      "explanation": "Méthode PAS : Protéger — Alerter — Secourir. C'est la base du SST (Sauveteur Secouriste du Travail)."
+    },
+    {
+      "id": 28, "theme": "Conduite à tenir et droits/devoirs", "type": "multi",
+      "question": "Le numéro d'appel des secours en France pour un accident grave sur chantier est :",
+      "options": ["15 (SAMU)", "18 (Pompiers)", "112 (Numéro d'urgence européen)", "17 (Police / Gendarmerie)", "3115"],
+      "correct": ["A", "B", "C", "D"],
+      "explanation": "15 SAMU, 18 Pompiers, 17 Police/Gendarmerie, 112 numéro européen. Le 3115 n'est pas un numéro d'urgence."
+    },
+    {
+      "id": 29, "theme": "Conduite à tenir et droits/devoirs", "type": "multi",
+      "question": "Concernant la consommation d'alcool, de stupéfiants ou de médicaments sur le chantier :",
+      "options": ["L'alcool est strictement interdit sur le chantier (hors dérogations très encadrées pour certains lieux de restauration)", "Les stupéfiants sont totalement interdits", "Un verre de vin au déjeuner n'a pas d'incidence sur la sécurité", "Je dois signaler à mon encadrement la prise d'un médicament qui peut altérer ma vigilance", "La consommation augmente le risque d'accident et peut engager ma responsabilité"],
+      "correct": ["A", "B", "D", "E"],
+      "explanation": "L'alcool et les stupéfiants augmentent fortement le risque d'accident. Certains médicaments aussi (pictogramme triangle sur la boîte). Responsabilité pénale possible."
+    },
+    {
+      "id": 30, "theme": "Conduite à tenir et droits/devoirs", "type": "single",
+      "question": "En tant qu'intérimaire en mission sur un chantier de gros œuvre, qui est responsable de votre sécurité ?",
+      "options": ["Uniquement l'agence d'intérim", "Uniquement l'entreprise utilisatrice (chantier)", "Uniquement moi-même", "C'est une responsabilité partagée : agence (ETT), entreprise utilisatrice (EU) et moi-même (chacun à son niveau)"],
+      "correct": ["D"],
+      "explanation": "Responsabilité partagée : l'ETT (agence) assure la formation générale et le contrat ; l'EU (chantier) assure l'accueil, les EPI spécifiques et les conditions de travail ; le salarié applique les consignes. C'est un trépied."
+    }
+  ]
+}
